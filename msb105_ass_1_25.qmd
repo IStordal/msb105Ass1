@@ -47,11 +47,20 @@ There is broad agreement that computational reproducibility should be treated as
 Can Quarto documents help with reproducibility?
 Tools such as Quarto offer a promising pathway toward more robust science. By embedding code, text, and results in a single document, Quarto reduces the opportunity for errors caused by manual copy–paste workflows [@xie2020; @wickham2016]. Integration with GitHub further improves transparency and enables collaborative review. Educational studies suggest that adopting such tools lowers barriers to reproducibility and helps establish open science practices early in training [@broman2018].
 
+What problems remain and how can these be solved?
+Despite technical progress, cultural and institutional barriers persist. Incentives still favor novel, positive results over careful replication [@begley2012]. Underpowered studies and flexible analysis pipelines contribute to irreproducible findings [@button2013]. Even where data-sharing policies exist, enforcement is inconsistent [@miguel2014].
 
+Several solutions have been proposed:
 
--   Should replicability be the norm or is this to much to ask for now?
--   Can Quarto documents help with reproducibility?
--   What problems remains and how can these be solved?
+- Policy and enforcement – stronger journal requirements for code and data, with checks   at the review stage [@stodden2013].
+
+- Preregistration and registered reports – reducing publication bias by committing to     hypotheses and analyses before seeing results [@nosek2015].
+
+- Training and infrastructure – equipping researchers with open science tools,
+  reproducible pipelines, and collaborative platforms [@sandve2013].
+
+- Environment capture – using containers or dependency management (e.g., renv in R) to    ensure analyses remain reproducible over time [@starr2015].
+
 
 ## Conclusion
 
