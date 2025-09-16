@@ -26,7 +26,7 @@ The discussion evaluates whether reproducibility is “good enough” today, arg
 
 ## Introduction
 
-Scientific credibility depends on whether findings are robust and reliable. In recent years, concerns over the so-called “replication crisis” have emerged across disciplines, raising doubts about the reproducibility of published results [@ioannidis2005b; @baker2016]. While reproducibility refers to the ability to re-obtain results with the same data and code, replicability involves validating results with new data [@goodman2016b]. Both are essential for cumulative science, yet evidence suggests that current practices are not always sufficient.
+Scientific credibility depends on whether findings are robust and reliable. In recent years, concerns over the so-called “replication crisis” have emerged across disciplines, raising doubts about the reproducibility of published results [@ioannidis2005b]. While reproducibility refers to the ability to re-obtain results with the same data and code, replicability involves validating results with new data [@goodman2016b]. Both are essential for cumulative science, yet evidence suggests that current practices are not always sufficient.
 
 This paper examines whether research is reproducible “enough” today. Drawing on insights from the lecture Robust and Reliable Science and relevant literature, it reviews core problems such as publication bias and Type I errors, large replication studies, and proposed solutions. It then discusses whether replicability should be treated as a norm, how new tools such as Quarto may help, and what barriers remain.
 
