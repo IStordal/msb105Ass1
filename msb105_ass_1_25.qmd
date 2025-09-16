@@ -16,6 +16,8 @@ format:
     papersize: A4
     fig-pos: "H"
 bibliography: reproducibility.bib
+              extra.bib
+
 abstract: "A very short abstract. Put the abstract text here. One or two paragraphs summarising what follows below."
 ---
 
