@@ -84,6 +84,47 @@ The central conclusion is that reproducibility is not yet good enough. Technical
 
 ## References
 
+Barnes, N. (2010). Publish your computer code: it is good enough. Nature, 467(7317), 753.
+
+Bechhofer, S., De Roure, D., Gamble, M., Goble, C., & Buchan, I. (2013). Research objects: Towards exchange and reuse of digital knowledge. The Future of Scholarly Communication.
+
+Broman, K. W., & Woo, K. H. (2018). Data organization in spreadsheets. The American Statistician, 72(1), 2–10.
+
+Dewald, W. G., Thursby, J. G., & Anderson, R. G. (1986). Replication in empirical economics: The Journal of Money, Credit and Banking Project. The American Economic Review, 76(4), 587–603.
+
+Gentleman, R., & Temple Lang, D. (2005). Statistical analyses and reproducible research. Bioconductor Project Working Papers, 2.
+
+Goodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341), 341ps12.
+
+Nosek, B. A., et al. (2015). Promoting an open research culture. Science, 348(6242), 1422–1425.
+
+Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251).
+
+Peng, R. D. (2011). Reproducible research in computational science. Science, 334(6060), 1226–1227.
+
+Rosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638–641.
+
+Simmons, J. P., Nelson, L. D., & Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychological Science, 22(11), 1359–1366.
+
+Stodden, V. (2010). The scientific method in practice: Reproducibility in the computational sciences. MIT Sloan Research Paper.
+
+Stodden, V., Leisch, F., & Peng, R. D. (2013). Implementing reproducible research. CRC Press.
+
+Xie, Y. (2015). Dynamic documents with R and knitr. Chapman and Hall/CRC.
+
+Xie, Y. (2020). R Markdown: The definitive guide. CRC Press.
+
+Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., & Ioannidis, J. P. A. (2017). A manifesto for reproducible science. Nature Human Behaviour, 1(1), 0021. https://doi.org/10.1038/s41562-016-0021
+
+Sandve, G. K., Nekrutenko, A., Taylor, J., & Hovig, E. (2013). Ten simple rules for reproducible computational research. PLoS Computational Biology, 9(10), e1003285. https://doi.org/10.1371/journal.pcbi.1003285
+
+Begley, C. G., & Ellis, L. M. (2012). Raise standards for preclinical cancer research. Nature, 483(7391), 531–533. https://doi.org/10.1038/483531a
+
+Miguel, E., Camerer, C., Casey, K., Cohen, J., Esterling, K. M., Gerber, A., Glennerster, R., Green, D. P., Humphreys, M., Imbens, G., Laitin, D., Madon, T., Nelson, L. D., Nosek, B. A., Petersen, M., Sedlmayr, R., Simmons, J. P., & Simonsohn, U. (2014). Promoting transparency in social science research. Science, 343(6166), 30–31. https://doi.org/10.1126/science.1245317
+
+Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., & Munafò, M. R. (2013). Power failure: why small sample size undermines the reliability of neuroscience. Nature Reviews Neuroscience, 14(5), 365–376. https://doi.org/10.1038/nrn3475
+
+
 and
 
 -   Version number and reference to packages used
