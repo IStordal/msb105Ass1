@@ -44,6 +44,9 @@ One widely promoted solution has been the requirement that journals mandate subm
 Should replicability be the norm, or is it too much to ask for now?
 There is broad agreement that computational reproducibility should be treated as a baseline expectation for all published research [@peng2011]. Full replication, however, remains resource-intensive and may not be feasible across all disciplines. Scholars suggest prioritizing replication in high-stakes areas, while enforcing reproducibility everywhere [@munafo2017].
 
+Can Quarto documents help with reproducibility?
+Tools such as Quarto offer a promising pathway toward more robust science. By embedding code, text, and results in a single document, Quarto reduces the opportunity for errors caused by manual copy–paste workflows [@xie2020; @wickham2016]. Integration with GitHub further improves transparency and enables collaborative review. Educational studies suggest that adopting such tools lowers barriers to reproducibility and helps establish open science practices early in training [@broman2018].
+
 
 
 -   Should replicability be the norm or is this to much to ask for now?
