@@ -24,9 +24,15 @@ abstract: "A very short abstract. Put the abstract text here. One or two paragra
 
 ## Introduction
 
+
 What is this paper about?
 What is discussed?
 Why is it of any consequence?
+
+Scientific credibility depends on whether findings are robust and reliable. In recent years, concerns over the so-called “replication crisis” have emerged across disciplines, raising doubts about the reproducibility of published results [@ioannidis2005b; @baker2016]. While reproducibility refers to the ability to re-obtain results with the same data and code, replicability involves validating results with new data [@goodman2016b]. Both are essential for cumulative science, yet evidence suggests that current practices are not always sufficient.
+
+This paper examines whether research is reproducible “enough” today. Drawing on insights from the lecture Robust and Reliable Science and relevant literature, it reviews core problems such as publication bias and Type I errors, large replication studies, and proposed solutions. It then discusses whether replicability should be treated as a norm, how new tools such as Quarto may help, and what barriers remain.
+
 
 ## Literature review
 
@@ -34,6 +40,7 @@ The distinction between reproducibility and replicability is central in the deba
 
 A major barrier to reliability is publication bias, often described as the “file drawer problem” [@rosenthal1979]. Positive and novel results are more likely to be published, creating a distorted scientific record. This is compounded by the high risk of Type I errors, particularly when researchers have flexibility in data collection and analysis [@simmons2011]. Meta-analyses show that these biases inflate reported effect sizes, reducing the reliability of the literature [@button2013].
 
+<<<<<<< HEAD
 Large-scale replication projects highlight the scope of the problem. The Open Science Collaboration (2015) attempted to replicate 100 studies in psychology and succeeded in reproducing only about one third of the effects. Similarly, in economics, @dewald1986b showed that many published empirical results could not be replicated due to missing data or code. Historical initiatives such as the JCMB Project (1982) were early attempts to establish standards for data archiving.
 
 One widely promoted solution has been the requirement that journals mandate submission of code and data alongside articles [@stodden2010; @stodden2013]. This has gradually been extended to include permanent archives and data repositories. Complementary initiatives like preregistration and registered reports aim to reduce questionable research practices [@nosek2015]. Technical frameworks such as literate programming [@gentleman2005b; @xie2015], reproducible computational pipelines [@sandve2013], and modern publishing platforms like Quarto [@allaire2020b] provide tools for integrating data, code, and narrative into a transparent workflow.
@@ -54,6 +61,34 @@ On the other hand it's claimed that bla bla [@barbalorenaa.2018; @bartlett2008].
 -   Should replicability be the norm or is this to much to ask for now?
 -   Can Quarto documents help with reproducibility?
 -   What problems remains and how can these be solved?
+
+Large-scale replication projects highlight the scope of the problem. The Open Science Collaboration (2015) attempted to replicate 100 studies in psychology and succeeded in reproducing only about one third of the effects. Similarly, in economics, @dewald1986b showed that many published empirical results could not be replicated due to missing data or code. Historical initiatives such as the JCMB Project in 1982 were early attempts to establish standards for data archiving.
+
+One widely promoted solution has been the requirement that journals mandate submission of code and data alongside articles [@stodden2010; @stodden2013]. This has gradually been extended to include permanent archives and data repositories. Complementary initiatives like preregistration and registered reports aim to reduce questionable research practices [@nosek2015]. Technical frameworks such as literate programming [@gentleman2005b; @xie2015], reproducible computational pipelines [@sandve2013], and modern publishing platforms like Quarto [@allaire2020b] provide tools for integrating data, code, and narrative into a transparent workflow.
+
+
+## Discussion of the reseach question
+
+Should replicability be the norm, or is it too much to ask for now?
+There is broad agreement that computational reproducibility should be treated as a baseline expectation for all published research [@peng2011]. Full replication, however, remains resource-intensive and may not be feasible across all disciplines. Scholars suggest prioritizing replication in high-stakes areas, while enforcing reproducibility everywhere [@munafo2017].
+
+Can Quarto documents help with reproducibility?
+Tools such as Quarto offer a promising pathway toward more robust science. By embedding code, text, and results in a single document, Quarto reduces the opportunity for errors caused by manual copy–paste workflows [@xie2020; @wickham2016]. Integration with GitHub further improves transparency and enables collaborative review. Educational studies suggest that adopting such tools lowers barriers to reproducibility and helps establish open science practices early in training [@broman2018].
+
+What problems remain and how can these be solved?
+Despite technical progress, cultural and institutional barriers persist. Incentives still favor novel, positive results over careful replication [@begley2012]. Underpowered studies and flexible analysis pipelines contribute to irreproducible findings [@button2013]. Even where data-sharing policies exist, enforcement is inconsistent [@miguel2014].
+
+Several solutions have been proposed:
+
+- Policy and enforcement – stronger journal requirements for code and data, with checks   at the review stage [@stodden2013].
+
+- Preregistration and registered reports – reducing publication bias by committing to     hypotheses and analyses before seeing results [@nosek2015].
+
+- Training and infrastructure – equipping researchers with open science tools,
+  reproducible pipelines, and collaborative platforms [@sandve2013].
+
+- Environment capture – using containers or dependency management (e.g., renv in R) to    ensure analyses remain reproducible over time [@starr2015].
+
 
 ## Conclusion
 
