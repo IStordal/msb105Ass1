@@ -125,10 +125,6 @@ Miguel, E., Camerer, C., Casey, K., Cohen, J., Esterling, K. M., Gerber, A., Gle
 Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., & Munafò, M. R. (2013). Power failure: why small sample size undermines the reliability of neuroscience. Nature Reviews Neuroscience, 14(5), 365–376. https://doi.org/10.1038/nrn3475
 
 
-and
-
--   Version number and reference to packages used
--   R version used
 
 
 
