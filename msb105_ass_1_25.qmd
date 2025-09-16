@@ -19,7 +19,9 @@ bibliography:
   - reproducibility.bib
   - extra.bib
 
-abstract: "A very short abstract. Put the abstract text here. One or two paragraphs summarising what follows below."
+abstract: The credibility of science depends on whether research findings are robust, reliable, and reproducible. Yet the past two decades have revealed significant challenges across psychology, economics, and biomedical research, where publication bias, small sample sizes, and flexible analytic practices have contributed to what is often called the “replication crisis.” This paper reviews key insights from the lecture Robust and Reliable Science alongside recent literature, distinguishing between reproducibility and replicability, and examining how large-scale replication efforts and methodological critiques have exposed weaknesses in current practices.
+
+The discussion evaluates whether reproducibility is “good enough” today, arguing that while computational reproducibility should be the baseline for credibility, full replication is more demanding and often resource-intensive. Technical frameworks such as Quarto and GitHub, combined with stronger journal policies, preregistration, and training in open science practices, offer pathways toward more reliable research. The conclusion highlights that progress is real but incomplete: reproducibility is not yet sufficient, but enforceable standards and practical tools are steadily moving science in the right direction.
 ---
 
 ## Introduction

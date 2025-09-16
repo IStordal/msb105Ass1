@@ -104,7 +104,8 @@ div.csl-indent {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>What is this paper about? What is discussed? Why is it of any consequence?</p>
+<p>Scientific credibility depends on whether findings are robust and reliable. In recent years, concerns over the so-called “replication crisis” have emerged across disciplines, raising doubts about the reproducibility of published results <span class="citation" data-cites="ioannidis2005b baker2016">(<a href="#ref-ioannidis2005b" role="doc-biblioref">Ioannidis, 30.aug.2005</a>; <a href="#ref-baker2016" role="doc-biblioref"><strong>baker2016?</strong></a>)</span>. While reproducibility refers to the ability to re-obtain results with the same data and code, replicability involves validating results with new data <span class="citation" data-cites="goodman2016b">(<a href="#ref-goodman2016b" role="doc-biblioref">Goodman et al., 2016</a>)</span>. Both are essential for cumulative science, yet evidence suggests that current practices are not always sufficient.</p>
+<p>This paper examines whether research is reproducible “enough” today. Drawing on insights from the lecture Robust and Reliable Science and relevant literature, it reviews core problems such as publication bias and Type I errors, large replication studies, and proposed solutions. It then discusses whether replicability should be treated as a norm, how new tools such as Quarto may help, and what barriers remain.</p>
 </section>
 <section id="literature-review" class="level2">
 <h2 class="anchored" data-anchor-id="literature-review">Literature review</h2>
@@ -112,11 +113,6 @@ div.csl-indent {
 <p>A major barrier to reliability is publication bias, often described as the “file drawer problem” <span class="citation" data-cites="rosenthal1979">(<a href="#ref-rosenthal1979" role="doc-biblioref">Rosenthal, 1979</a>)</span>. Positive and novel results are more likely to be published, creating a distorted scientific record. This is compounded by the high risk of Type I errors, particularly when researchers have flexibility in data collection and analysis <span class="citation" data-cites="simmons2011">(<a href="#ref-simmons2011" role="doc-biblioref">Simmons et al., 2011</a>)</span>. Meta-analyses show that these biases inflate reported effect sizes, reducing the reliability of the literature <span class="citation" data-cites="button2013">(<a href="#ref-button2013" role="doc-biblioref">Button et al., 2013</a>)</span>.</p>
 <p>Large-scale replication projects highlight the scope of the problem. The Open Science Collaboration (2015) attempted to replicate 100 studies in psychology and succeeded in reproducing only about one third of the effects. Similarly, in economics, <span class="citation" data-cites="dewald1986b">Dewald et al. (<a href="#ref-dewald1986b" role="doc-biblioref">1986</a>)</span> showed that many published empirical results could not be replicated due to missing data or code. Historical initiatives such as the JCMB Project (1982) were early attempts to establish standards for data archiving.</p>
 <p>One widely promoted solution has been the requirement that journals mandate submission of code and data alongside articles <span class="citation" data-cites="stodden2010 stodden2013">(<a href="#ref-stodden2010" role="doc-biblioref"><strong>stodden2010?</strong></a>; <a href="#ref-stodden2013" role="doc-biblioref"><strong>stodden2013?</strong></a>)</span>. This has gradually been extended to include permanent archives and data repositories. Complementary initiatives like preregistration and registered reports aim to reduce questionable research practices <span class="citation" data-cites="nosek2015">(<a href="#ref-nosek2015" role="doc-biblioref">Nosek et al., 2015</a>)</span>. Technical frameworks such as literate programming <span class="citation" data-cites="gentleman2005b xie2015">(<a href="#ref-gentleman2005b" role="doc-biblioref">Gentleman, 2005</a>; <a href="#ref-xie2015" role="doc-biblioref">Xie, 2015</a>)</span>, reproducible computational pipelines <span class="citation" data-cites="sandve2013">(<a href="#ref-sandve2013" role="doc-biblioref">Sandve et al., 2013</a>)</span>, and modern publishing platforms like Quarto <span class="citation" data-cites="allaire2020b">(<a href="#ref-allaire2020b" role="doc-biblioref">Allaire et al., 2020</a>)</span> provide tools for integrating data, code, and narrative into a transparent workflow.</p>
-<p>Smart stuff from others about the topic.</p>
-<p>Use a least 20 citations, a least 5 of them must be new (not from the provided .bib file).</p>
-<p>Use both in-line and normal citations.</p>
-<p>Example:</p>
-<p><span class="citation" data-cites="gentleman2005">(<a href="#ref-gentleman2005" role="doc-biblioref"><strong>gentleman2005?</strong></a>)</span> argues that bla bla bla. On the other hand it’s claimed that bla bla <span class="citation" data-cites="barbalorenaa.2018 bartlett2008">(<a href="#ref-barbalorenaa.2018" role="doc-biblioref"><strong>barbalorenaa.2018?</strong></a>; <a href="#ref-bartlett2008" role="doc-biblioref"><strong>bartlett2008?</strong></a>)</span>.</p>
 </section>
 <section id="discussion-of-the-reseach-question" class="level2">
 <h2 class="anchored" data-anchor-id="discussion-of-the-reseach-question">Discussion of the reseach question</h2>
@@ -125,17 +121,49 @@ div.csl-indent {
 <li>Can Quarto documents help with reproducibility?</li>
 <li>What problems remains and how can these be solved?</li>
 </ul>
+<p>Large-scale replication projects highlight the scope of the problem. The Open Science Collaboration (2015) attempted to replicate 100 studies in psychology and succeeded in reproducing only about one third of the effects. Similarly, in economics, <span class="citation" data-cites="dewald1986b">Dewald et al. (<a href="#ref-dewald1986b" role="doc-biblioref">1986</a>)</span> showed that many published empirical results could not be replicated due to missing data or code. Historical initiatives such as the JCMB Project in 1982 were early attempts to establish standards for data archiving.</p>
+<p>One widely promoted solution has been the requirement that journals mandate submission of code and data alongside articles <span class="citation" data-cites="stodden2010 stodden2013">(<a href="#ref-stodden2010" role="doc-biblioref"><strong>stodden2010?</strong></a>; <a href="#ref-stodden2013" role="doc-biblioref"><strong>stodden2013?</strong></a>)</span>. This has gradually been extended to include permanent archives and data repositories. Complementary initiatives like preregistration and registered reports aim to reduce questionable research practices <span class="citation" data-cites="nosek2015">(<a href="#ref-nosek2015" role="doc-biblioref">Nosek et al., 2015</a>)</span>. Technical frameworks such as literate programming <span class="citation" data-cites="gentleman2005b xie2015">(<a href="#ref-gentleman2005b" role="doc-biblioref">Gentleman, 2005</a>; <a href="#ref-xie2015" role="doc-biblioref">Xie, 2015</a>)</span>, reproducible computational pipelines <span class="citation" data-cites="sandve2013">(<a href="#ref-sandve2013" role="doc-biblioref">Sandve et al., 2013</a>)</span>, and modern publishing platforms like Quarto <span class="citation" data-cites="allaire2020b">(<a href="#ref-allaire2020b" role="doc-biblioref">Allaire et al., 2020</a>)</span> provide tools for integrating data, code, and narrative into a transparent workflow.</p>
+</section>
+<section id="discussion-of-the-reseach-question-1" class="level2">
+<h2 class="anchored" data-anchor-id="discussion-of-the-reseach-question-1">Discussion of the reseach question</h2>
+<p>Should replicability be the norm, or is it too much to ask for now? There is broad agreement that computational reproducibility should be treated as a baseline expectation for all published research <span class="citation" data-cites="peng2011">(<a href="#ref-peng2011" role="doc-biblioref">Peng, 2011</a>)</span>. Full replication, however, remains resource-intensive and may not be feasible across all disciplines. Scholars suggest prioritizing replication in high-stakes areas, while enforcing reproducibility everywhere <span class="citation" data-cites="munafo2017">(<a href="#ref-munafo2017" role="doc-biblioref">Munafò et al., 2017</a>)</span>.</p>
+<p>Can Quarto documents help with reproducibility? Tools such as Quarto offer a promising pathway toward more robust science. By embedding code, text, and results in a single document, Quarto reduces the opportunity for errors caused by manual copy–paste workflows <span class="citation" data-cites="xie2020 wickham2016">(<a href="#ref-wickham2016" role="doc-biblioref">Wickham &amp; Grolemund, 2016</a>; <a href="#ref-xie2020" role="doc-biblioref">Xie, 2020</a>)</span>. Integration with GitHub further improves transparency and enables collaborative review. Educational studies suggest that adopting such tools lowers barriers to reproducibility and helps establish open science practices early in training <span class="citation" data-cites="broman2018">(<a href="#ref-broman2018" role="doc-biblioref">Broman &amp; Woo, 2018</a>)</span>.</p>
+<p>What problems remain and how can these be solved? Despite technical progress, cultural and institutional barriers persist. Incentives still favor novel, positive results over careful replication <span class="citation" data-cites="begley2012">(<a href="#ref-begley2012" role="doc-biblioref">Begley &amp; Ellis, 2012</a>)</span>. Underpowered studies and flexible analysis pipelines contribute to irreproducible findings <span class="citation" data-cites="button2013">(<a href="#ref-button2013" role="doc-biblioref">Button et al., 2013</a>)</span>. Even where data-sharing policies exist, enforcement is inconsistent <span class="citation" data-cites="miguel2014">(<a href="#ref-miguel2014" role="doc-biblioref">Miguel et al., 2014</a>)</span>.</p>
+<p>Several solutions have been proposed:</p>
+<ul>
+<li><p>Policy and enforcement – stronger journal requirements for code and data, with checks at the review stage <span class="citation" data-cites="stodden2013">(<a href="#ref-stodden2013" role="doc-biblioref"><strong>stodden2013?</strong></a>)</span>.</p></li>
+<li><p>Preregistration and registered reports – reducing publication bias by committing to hypotheses and analyses before seeing results <span class="citation" data-cites="nosek2015">(<a href="#ref-nosek2015" role="doc-biblioref">Nosek et al., 2015</a>)</span>.</p></li>
+<li><p>Training and infrastructure – equipping researchers with open science tools, reproducible pipelines, and collaborative platforms <span class="citation" data-cites="sandve2013">(<a href="#ref-sandve2013" role="doc-biblioref">Sandve et al., 2013</a>)</span>.</p></li>
+<li><p>Environment capture – using containers or dependency management (e.g., renv in R) to ensure analyses remain reproducible over time <span class="citation" data-cites="starr2015">(<a href="#ref-starr2015" role="doc-biblioref">Starr et al., 2015</a>)</span>.</p></li>
+</ul>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The debate over reproducibility and replicability highlights both encouraging progress and persistent challenges. Evidence from psychology, economics, and biomedicine demonstrates that many findings cannot be easily reproduced <span class="citation" data-cites="opensciencecollaboration2015 dewald1986b begley2012">(<a href="#ref-begley2012" role="doc-biblioref">Begley &amp; Ellis, 2012</a>; <a href="#ref-opensciencecollaboration2015" role="doc-biblioref">Collaboration, 2015</a>; <a href="#ref-dewald1986b" role="doc-biblioref">Dewald et al., 1986</a>)</span>. At the same time, reforms such as preregistration, journal data policies, and computational tools have made reproducible workflows increasingly achievable <span class="citation" data-cites="sandve2013 munafo2017">(<a href="#ref-munafo2017" role="doc-biblioref">Munafò et al., 2017</a>; <a href="#ref-sandve2013" role="doc-biblioref">Sandve et al., 2013</a>)</span>.</p>
+<p>The central conclusion is that reproducibility is not yet good enough. Technical barriers have been lowered, but cultural incentives and enforcement gaps continue to hinder progress. A pragmatic solution is to treat computational reproducibility as a baseline requirement, while prioritizing replication in high-impact areas. With the continued adoption of tools like Quarto, GitHub, and transparent data archives, the scientific community can move toward truly robust and reliable science.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<p>and</p>
-<ul>
-<li>Version number and reference to packages used</li>
-<li>R version used</li>
-</ul>
+<p>Barnes, N. (2010). Publish your computer code: it is good enough. Nature, 467(7317), 753.</p>
+<p>Bechhofer, S., De Roure, D., Gamble, M., Goble, C., &amp; Buchan, I. (2013). Research objects: Towards exchange and reuse of digital knowledge. The Future of Scholarly Communication.</p>
+<p>Broman, K. W., &amp; Woo, K. H. (2018). Data organization in spreadsheets. The American Statistician, 72(1), 2–10.</p>
+<p>Dewald, W. G., Thursby, J. G., &amp; Anderson, R. G. (1986). Replication in empirical economics: The Journal of Money, Credit and Banking Project. The American Economic Review, 76(4), 587–603.</p>
+<p>Gentleman, R., &amp; Temple Lang, D. (2005). Statistical analyses and reproducible research. Bioconductor Project Working Papers, 2.</p>
+<p>Goodman, S. N., Fanelli, D., &amp; Ioannidis, J. P. A. (2016). What does research reproducibility mean? Science Translational Medicine, 8(341), 341ps12.</p>
+<p>Nosek, B. A., et al.&nbsp;(2015). Promoting an open research culture. Science, 348(6242), 1422–1425.</p>
+<p>Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. Science, 349(6251).</p>
+<p>Peng, R. D. (2011). Reproducible research in computational science. Science, 334(6060), 1226–1227.</p>
+<p>Rosenthal, R. (1979). The file drawer problem and tolerance for null results. Psychological Bulletin, 86(3), 638–641.</p>
+<p>Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-positive psychology: Undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychological Science, 22(11), 1359–1366.</p>
+<p>Stodden, V. (2010). The scientific method in practice: Reproducibility in the computational sciences. MIT Sloan Research Paper.</p>
+<p>Stodden, V., Leisch, F., &amp; Peng, R. D. (2013). Implementing reproducible research. CRC Press.</p>
+<p>Xie, Y. (2015). Dynamic documents with R and knitr. Chapman and Hall/CRC.</p>
+<p>Xie, Y. (2020). R Markdown: The definitive guide. CRC Press.</p>
+<p>Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Sert, N. P., Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., &amp; Ioannidis, J. P. A. (2017). A manifesto for reproducible science. Nature Human Behaviour, 1(1), 0021. https://doi.org/10.1038/s41562-016-0021</p>
+<p>Sandve, G. K., Nekrutenko, A., Taylor, J., &amp; Hovig, E. (2013). Ten simple rules for reproducible computational research. PLoS Computational Biology, 9(10), e1003285. https://doi.org/10.1371/journal.pcbi.1003285</p>
+<p>Begley, C. G., &amp; Ellis, L. M. (2012). Raise standards for preclinical cancer research. Nature, 483(7391), 531–533. https://doi.org/10.1038/483531a</p>
+<p>Miguel, E., Camerer, C., Casey, K., Cohen, J., Esterling, K. M., Gerber, A., Glennerster, R., Green, D. P., Humphreys, M., Imbens, G., Laitin, D., Madon, T., Nelson, L. D., Nosek, B. A., Petersen, M., Sedlmayr, R., Simmons, J. P., &amp; Simonsohn, U. (2014). Promoting transparency in social science research. Science, 343(6166), 30–31. https://doi.org/10.1126/science.1245317</p>
+<p>Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., &amp; Munafò, M. R. (2013). Power failure: why small sample size undermines the reliability of neuroscience. Nature Reviews Neuroscience, 14(5), 365–376. https://doi.org/10.1038/nrn3475</p>
 
 </section>
 
@@ -143,8 +171,17 @@ div.csl-indent {
 <div id="ref-allaire2020b" class="csl-entry" role="listitem">
 Allaire, J., Xie, Y., McPherson, J., Luraschi, J., Ushey, K., Atkins, A., Wickham, H., Cheng, J., Chang, W., &amp; Iannone, R. (2020). <em>Rmarkdown: <span>Dynamic</span> documents for r</em>.
 </div>
+<div id="ref-begley2012" class="csl-entry" role="listitem">
+Begley, C. G., &amp; Ellis, L. M. (2012). Raise standards for preclinical cancer research. <em>Nature</em>, <em>483</em>(7391), 531–533.
+</div>
+<div id="ref-broman2018" class="csl-entry" role="listitem">
+Broman, K. W., &amp; Woo, K. H. (2018). <em>Data organization in spreadsheets</em> (No. e3183v2). PeerJ Inc.
+</div>
 <div id="ref-button2013" class="csl-entry" role="listitem">
 Button, K. S., Ioannidis, J. P. A., Mokrysz, C., Nosek, B. A., Flint, J., Robinson, E. S. J., &amp; Munafò, M. R. (2013). Power failure: Why small sample size undermines the reliability of neuroscience. <em>Nature Reviews Neuroscience</em>, <em>14</em>(5), 365–376.
+</div>
+<div id="ref-opensciencecollaboration2015" class="csl-entry" role="listitem">
+Collaboration, O. S. (2015). Estimating the reproducibility of psychological science. <em>Science</em>, <em>349</em>(6251).
 </div>
 <div id="ref-dewald1986b" class="csl-entry" role="listitem">
 Dewald, W. G., Thursby, J. G., &amp; Anderson, R. G. (1986). Replication in <span>Empirical Economics</span>: <span>The Journal</span> of <span>Money</span>, <span>Credit</span> and <span>Banking Project</span>. <em>The American Economic Review</em>, <em>76</em>(4), 587–603.
@@ -154,6 +191,12 @@ Gentleman, R. (2005). Reproducible <span>Research</span>: <span>A Bioinformatics
 </div>
 <div id="ref-goodman2016b" class="csl-entry" role="listitem">
 Goodman, S. N., Fanelli, D., &amp; Ioannidis, J. P. A. (2016). What does research reproducibility mean? <em>Science Translational Medicine</em>, <em>8</em>(341), 341ps12–341ps12.
+</div>
+<div id="ref-ioannidis2005b" class="csl-entry" role="listitem">
+Ioannidis, J. P. A. (30.aug.2005). Why <span>Most Published Research Findings Are False</span>. <em>PLOS Medicine</em>, <em>2</em>(8), e124.
+</div>
+<div id="ref-miguel2014" class="csl-entry" role="listitem">
+Miguel, E., Camerer, C., Casey, K., Cohen, J., Esterling, K. M., Gerber, A., Glennerster, R., Green, D. P., Humphreys, M., Imbens, G., Laitin, D., Madon, T., Nelson, L. D., Nosek, B. A., Petersen, M., Sedlmayr, R., Simmons, J. P., &amp; Simonsohn, U. (2014). Promoting transparency in social science research. <em>Science</em>, <em>343</em>(6166), 30–31.
 </div>
 <div id="ref-munafo2017" class="csl-entry" role="listitem">
 Munafò, M. R., Nosek, B. A., Bishop, D. V., Button, K. S., Chambers, C. D., Sert, N. P. du, Simonsohn, U., Wagenmakers, E.-J., Ware, J. J., &amp; Ioannidis, J. P. (2017). A manifesto for reproducible science. <em>Nature Human Behaviour</em>, <em>1</em>, 0021.
@@ -173,8 +216,17 @@ Sandve, G. K., Nekrutenko, A., Taylor, J., &amp; Hovig, E. (2013). Ten simple ru
 <div id="ref-simmons2011" class="csl-entry" role="listitem">
 Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-positive psychology: <span>Undisclosed</span> flexibility in data collection and analysis allows presenting anything as significant. <em>Psychological Science</em>, <em>22</em>(11), 1359–1366.
 </div>
+<div id="ref-starr2015" class="csl-entry" role="listitem">
+Starr, J., Castro, E., Crosas, M., Dumontier, M., Downs, R. R., Duerr, R., Haak, L. L., Haendel, M., Herman, I., Hodson, S., Hourclé, J., Kratz, J. E., Lin, J., Nielsen, L. H., Nurnberger, A., Proell, S., Rauber, A., Sacchi, S., Smith, A., … Clark, T. (2015). Achieving human and machine accessibility of cited data in scholarly publications. <em>PeerJ Computer Science</em>, <em>1</em>, e1.
+</div>
+<div id="ref-wickham2016" class="csl-entry" role="listitem">
+Wickham, H., &amp; Grolemund, G. (2016). <em>R for data science: Import, tidy, transform, visualize, and model data</em> (pp. XXV, 492). O’Reilly.
+</div>
 <div id="ref-xie2015" class="csl-entry" role="listitem">
 Xie, Y. (2015). <em>Dynamic documents with <span>R</span> and knitr</em> (Second). <span>Chapman and Hall/CRC</span>.
+</div>
+<div id="ref-xie2020" class="csl-entry" role="listitem">
+Xie, Y. (2020). <em>Knitr: <span>A</span> general-purpose package for dynamic report generation in r</em> [Manual].
 </div>
 </div></section></div></main>
 <!-- /main column -->
