@@ -77,7 +77,9 @@ Several solutions have been proposed:
 
 ## Conclusion
 
+The debate over reproducibility and replicability highlights both encouraging progress and persistent challenges. Evidence from psychology, economics, and biomedicine demonstrates that many findings cannot be easily reproduced [@opensciencecollaboration2015; @dewald1986b; @begley2012]. At the same time, reforms such as preregistration, journal data policies, and computational tools have made reproducible workflows increasingly achievable [@sandve2013; @munafo2017].
 
+The central conclusion is that reproducibility is not yet good enough. Technical barriers have been lowered, but cultural incentives and enforcement gaps continue to hinder progress. A pragmatic solution is to treat computational reproducibility as a baseline requirement, while prioritizing replication in high-impact areas. With the continued adoption of tools like Quarto, GitHub, and transparent data archives, the scientific community can move toward truly robust and reliable science.
 
 
 ## References
