@@ -84,6 +84,18 @@ The debate over reproducibility and replicability highlights both encouraging pr
 The central conclusion is that reproducibility is not yet good enough. Technical barriers have been lowered, but cultural incentives and enforcement gaps continue to hinder progress. A pragmatic solution is to treat computational reproducibility as a baseline requirement, while prioritizing replication in high-impact areas. With the continued adoption of tools like Quarto, GitHub, and transparent data archives, the scientific community can move toward truly robust and reliable science.
 
 
+## R version
+
+R version 4.5.1 (2025-06-13)
+
+## attached packages:
+
+attached base packages:
+[1] stats,     graphics,  grDevices,   utils,     datasets,  methods,   base,     
+
+other attached packages:
+[1] lubridate_1.9.4, forcats_1.0.0,   stringr_1.5.1,   dplyr_1.1.4,     purrr_1.1.0,   
+[6] readr_2.1.5,     tidyr_1.3.1,     tibble_3.3.0,    ggplot2_3.5.2, 
 
 
 
