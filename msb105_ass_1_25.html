@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -50,10 +50,10 @@ div.csl-indent {
 <script src="msb105_ass_1_25_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="msb105_ass_1_25_files/libs/quarto-html/anchor.min.js"></script>
 <link href="msb105_ass_1_25_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="msb105_ass_1_25_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="msb105_ass_1_25_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="msb105_ass_1_25_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="msb105_ass_1_25_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="msb105_ass_1_25_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="msb105_ass_1_25_files/libs/bootstrap/bootstrap-973236bd072d72a04ee9cd82dcc9cb29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -62,7 +62,7 @@ div.csl-indent {
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="msb105_ass_1_25.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li><li><a href="msb105_ass_1_25.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="msb105_ass_1_25.pdf"><i class="bi bi-file-pdf"></i>Typst</a></li><li><a href="msb105_ass_1_25_tex.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -84,7 +84,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Thursday 18 Sep, 2025</p>
+      <p class="date">Tuesday 23 Sep, 2025</p>
     </div>
   </div>
   
@@ -97,18 +97,18 @@ div.csl-indent {
 
 
 <p>abstract: The credibility of science depends on whether research findings are robust, reliable, and reproducible. Over the past two decades, several fields have faced what is now called the “replication crisis” where publication bias, small samples, and flexible analysis practices have weakened confidence in results. This paper builds on the lecture Robust and Reliable Science and reviews literature on reproducibility and replicability, highlighting how large replication studies and methodological critiques have revealed shortcomings in current practices.</p>
-<p>The paper argues that computational reproducibility should be treated as a basic requirement for credibility, while full replication is more demanding and often limited by resources. Tools such as Quarto and GitHub, combined with journal policies, preregistration, and better training in open science practices, provide promising ways forward. Although progress has been made, reproducibility is still not sufficient, and stronger standards and incentives are needed to move science toward greater robustness and reliability.</p>
+<p>The paper argues that computational reproducibility should be treated as a basic requirement for credibility, while full replication is more demanding and often limited by resources. Tools such as Quarto and GitHub, combined with journal policies, preregistration, and better training in open science practices, provide promising ways forward. Although progress has been made, reproducibility is still not sufficient. Stronger standards and incentives are needed to move science toward greater robustness and reliability.</p>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>The trustworthiness of research relies on whether results can be reproduced and verified. In the last two decades, many disciplines have faced growing concern over the “replication crisis,” raising doubts about the reliability of published findings <span class="citation" data-cites="ioannidis2005b">(<a href="#ref-ioannidis2005b" role="doc-biblioref">Ioannidis, 30.aug.2005</a>)</span>. Reproducibility refers to obtaining the same results using the original data and methods, while replicability means validating those results with new data <span class="citation" data-cites="goodman2016b">(<a href="#ref-goodman2016b" role="doc-biblioref">Goodman et al., 2016</a>)</span>. Both are essential for cumulative science, yet evidence shows that current practices often fall short.</p>
-<p>This paper asks whether reproducibility today is “good enough.” Drawing on the lecture Robust and Reliable Science and key sources, it reviews problems such as publication bias, Type I errors, and replication failures in psychology and economics. It then discusses potential solutions, including preregistration, data and code sharing, and technical tools such as Quarto. The goal is to evaluate the current state of reproducibility and outline what is still needed to make science more reliable.</p>
+<p>This paper asks whether reproducibility today is “good enough.” Drawing on the lecture Robust and Reliable Science and key sources, it reviews problems such as publication bias, Type I errors, and replication failures in psychology and economics. It then discusses potential solutions including preregistration, data and code sharing, and technical tools such as Quarto. The goal is to evaluate the current state of reproducibility and outline what is still needed to make science more reliable.</p>
 </section>
 <section id="literature-review" class="level2">
 <h2 class="anchored" data-anchor-id="literature-review">Literature review</h2>
 <p>The distinction between reproducibility and replicability has become central to debates about research quality. Reproducibility means running the same analysis on the same data to obtain the same result, while replicability requires re-testing findings on new material <span class="citation" data-cites="peng2011 goodman2016b">(<a href="#ref-goodman2016b" role="doc-biblioref">Goodman et al., 2016</a>; <a href="#ref-peng2011" role="doc-biblioref">Peng, 2011</a>)</span>. Scholars often describe reproducibility as the baseline for credible work, with replicability as the gold standard <span class="citation" data-cites="munafo2017">(<a href="#ref-munafo2017" role="doc-biblioref">Munafò et al., 2017</a>)</span>.</p>
 <p>One of the main barriers to reliability is publication bias, sometimes called the “file drawer problem” <span class="citation" data-cites="rosenthal1979">(<a href="#ref-rosenthal1979" role="doc-biblioref">Rosenthal, 1979</a>)</span>. Positive and surprising results are more likely to be published, which creates a distorted scientific record. This issue is worsened by the risk of Type I errors, especially when researchers have flexibility in how they collect or analyze data <span class="citation" data-cites="simmons2011">(<a href="#ref-simmons2011" role="doc-biblioref">Simmons et al., 2011</a>)</span>. Studies show that these practices inflate reported effect sizes, reducing the trustworthiness of the literature <span class="citation" data-cites="button2013">(<a href="#ref-button2013" role="doc-biblioref">Button et al., 2013</a>)</span>.</p>
 <p>Large replication projects illustrate the scale of the problem. The Open Science Collaboration (2015) tried to replicate 100 studies in psychology and succeeded in reproducing only about one third. In economics, Dewald, Thursby, and Anderson (1986) showed that many empirical results could not be reproduced because data or code were missing. Earlier attempts such as the JCMB Project (1982) already recognized the need for standardized data archiving.</p>
-<p>Proposed solutions include stronger journal policies requiring authors to provide code and data, sometimes linked to permanent repositories <span class="citation" data-cites="barnes2010b bechhofer2013b">(e.g., <a href="#ref-barnes2010b" role="doc-biblioref">Barnes, 2010</a>; <a href="#ref-bechhofer2013b" role="doc-biblioref">Bechhofer et al., 2013</a>)</span>. Complementary reforms such as preregistration and registered reports aim to reduce questionable research practices <span class="citation" data-cites="nosek2015">(<a href="#ref-nosek2015" role="doc-biblioref">Nosek et al., 2015</a>)</span>. Technical frameworks also play a role: literate programming <span class="citation" data-cites="gentleman2005b xie2015">(<a href="#ref-gentleman2005b" role="doc-biblioref">Gentleman, 2005</a>; <a href="#ref-xie2015" role="doc-biblioref">Xie, 2015</a>)</span>, practical guidelines for computational reproducibility <span class="citation" data-cites="sandve2013">(<a href="#ref-sandve2013" role="doc-biblioref">Sandve et al., 2013</a>)</span>, and newer publishing systems like Quarto <span class="citation" data-cites="allaire2020b">(<a href="#ref-allaire2020b" role="doc-biblioref">Allaire et al., 2020</a>)</span> make it easier to integrate code, data, and text into transparent workflows.</p>
+<p>Proposed solutions include stronger journal policies requiring authors to provide code and data, sometimes linked to permanent repositories <span class="citation" data-cites="barnes2010b bechhofer2013b">(e.g., <a href="#ref-barnes2010b" role="doc-biblioref">Barnes, 2010</a>; <a href="#ref-bechhofer2013b" role="doc-biblioref">Bechhofer et al., 2013</a>)</span>. Complementary reforms such as preregistration and registered reports aim to reduce questionable research practices <span class="citation" data-cites="nosek2015">(<a href="#ref-nosek2015" role="doc-biblioref">Nosek et al., 2015</a>)</span>. Technical frameworks also play a role: literate programming <span class="citation" data-cites="gentleman2005b xie2015">(<a href="#ref-gentleman2005b" role="doc-biblioref">Gentleman, 2005</a>; <a href="#ref-xie2015" role="doc-biblioref">Xie, 2015</a>)</span>, practical guidelines for computational reproducibility <span class="citation" data-cites="sandve2013">(<a href="#ref-sandve2013" role="doc-biblioref">Sandve et al., 2013</a>)</span>, and newer publishing systems like Quarto <span class="citation" data-cites="allaire2020b">(<a href="#ref-allaire2020b" role="doc-biblioref">Allaire et al., 2020</a>)</span> make it easier to integrate code, data, and text into workflows.</p>
 </section>
 <section id="discussion-of-the-reseach-question" class="level2">
 <h2 class="anchored" data-anchor-id="discussion-of-the-reseach-question">Discussion of the reseach question</h2>
