@@ -5,86 +5,117 @@ date: last-modified
 date-format: "dddd D MMM, YYYY"
 csl: apa7.csl
 lang: en-GB
+citeproc: true
+papersize: a4
+number-sections: true
 format:
   html: default
-  typst:
-    papersize: a4
+  typst: default
   pdf:
     documentclass: article
-    number-sections: true
     keep-tex: true
-    papersize: A4
     fig-pos: "H"
+    output-file: "msb105_ass_1_25_tex.pdf"
+  docx: default
 bibliography: 
   - reproducibility.bib
   - extra.bib
+abstract: "The credibility of science depends on whether research findings are robust, reliable, and reproducible. Over the past two decades, several fields have faced what is now called the “replication crisis” where publication bias, small samples, and flexible analysis practices have weakened confidence in results. This paper builds on the lecture Robust and Reliable Science and reviews literature on reproducibility and replicability, highlighting how large replication studies and methodological critiques have revealed shortcomings in current practices. The paper argues that computational reproducibility should be treated as a basic requirement for credibility, while full replication is more demanding and often limited by resources. Tools such as Quarto and GitHub, combined with journal policies, preregistration, and better training in open science practices, provide promising ways forward. Although progress has been made, reproducibility is still not sufficient. Stronger standards and incentives are needed to move science toward greater robustness and reliability."
 ---
-
-abstract: The credibility of science depends on whether research findings are robust, reliable, and reproducible. Over the past two decades, several fields have faced what is now called the “replication crisis” where publication bias, small samples, and flexible analysis practices have weakened confidence in results. This paper builds on the lecture Robust and Reliable Science and reviews literature on reproducibility and replicability, highlighting how large replication studies and methodological critiques have revealed shortcomings in current practices.
-
-The paper argues that computational reproducibility should be treated as a basic requirement for credibility, while full replication is more demanding and often limited by resources. Tools such as Quarto and GitHub, combined with journal policies, preregistration, and better training in open science practices, provide promising ways forward. Although progress has been made, reproducibility is still not sufficient. Stronger standards and incentives are needed to move science toward greater robustness and reliability.
 
 ## Introduction
 
-The trustworthiness of research relies on whether results can be reproduced and verified. In the last two decades, many disciplines have faced growing concern over the “replication crisis,” raising doubts about the reliability of published findings [@ioannidis2005b]. Reproducibility refers to obtaining the same results using the original data and methods, while replicability means validating those results with new data [@goodman2016b]. Both are essential for cumulative science, yet evidence shows that current practices often fall short.
+The trustworthiness of research relies on whether results can be reproduced and verified.
+In the last two decades, many disciplines have faced growing concern over the “replication crisis”, raising doubts about the reliability of published findings [@ioannidis2005b].
+Reproducibility refers to obtaining the same results using the original data and methods, while replicability means validating those results with new data [@goodman2016b].
+Both are essential for cumulative science, yet evidence shows that current practices often fall short.
 
-This paper asks whether reproducibility today is “good enough.” Drawing on the lecture Robust and Reliable Science and key sources, it reviews problems such as publication bias, Type I errors, and replication failures in psychology and economics. It then discusses potential solutions including preregistration, data and code sharing, and technical tools such as Quarto. The goal is to evaluate the current state of reproducibility and outline what is still needed to make science more reliable.
-
+This paper asks whether reproducibility today is “good enough.” Drawing on the lecture Robust and Reliable Science and key sources, it reviews problems such as publication bias, Type I errors, and replication failures in psychology and economics.
+It then discusses potential solutions including preregistration, data and code sharing, and technical tools such as Quarto.
+The goal is to evaluate the current state of reproducibility and outline what is still needed to make science more reliable.
 
 ## Literature review
 
-The distinction between reproducibility and replicability has become central to debates about research quality. Reproducibility means running the same analysis on the same data to obtain the same result, while replicability requires re-testing findings on new material [@peng2011; @goodman2016b]. Scholars often describe reproducibility as the baseline for credible work, with replicability as the gold standard [@munafo2017].
+The distinction between reproducibility and replicability has become central to debates about research quality.
+Reproducibility means running the same analysis on the same data to obtain the same result, while replicability requires re-testing findings on new material [@peng2011; @goodman2016b].
+Scholars often describe reproducibility as the baseline for credible work, with replicability as the gold standard [@munafo2017].
 
-One of the main barriers to reliability is publication bias, sometimes called the “file drawer problem” [@rosenthal1979]. Positive and surprising results are more likely to be published, which creates a distorted scientific record. This issue is worsened by the risk of Type I errors, especially when researchers have flexibility in how they collect or analyze data [@simmons2011]. Studies show that these practices inflate reported effect sizes, reducing the trustworthiness of the literature [@button2013].
+One of the main barriers to reliability is publication bias, sometimes called the “file drawer problem” [@rosenthal1979].
+Positive and surprising results are more likely to be published, which creates a distorted scientific record.
+@simmons2011 point out that this issue is worsened by the risk of Type I errors, especially when researchers have in how they collect or analyze data.
+Studies show that these practices inflate reported effect sizes, reducing the trustworthiness of the literature [@button2013].
 
-Large replication projects illustrate the scale of the problem. The Open Science Collaboration (2015) tried to replicate 100 studies in psychology and succeeded in reproducing only about one third. In economics, Dewald, Thursby, and Anderson (1986) showed that many empirical results could not be reproduced because data or code were missing. Earlier attempts such as the JCMB Project (1982) already recognized the need for standardized data archiving.
+Large replication projects illustrate the scale of the problem.
+The Open Science Collaboration (2015) tried to replicate 100 studies in psychology and succeeded in reproducing only about one third.
+In economics, @dewald1986b showed that many empirical results could not be reproduced because data or code were missing.
+They used data from the 1982 *JMCB Data Storage and Evaluation Project*.
 
-Proposed solutions include stronger journal policies requiring authors to provide code and data, sometimes linked to permanent repositories [e.g., @barnes2010b; @bechhofer2013b]. Complementary reforms such as preregistration and registered reports aim to reduce questionable research practices [@nosek2015]. Technical frameworks also play a role: literate programming [@gentleman2005b; @xie2015], practical guidelines for computational reproducibility [@sandve2013], and newer publishing systems like Quarto [@allaire2020b] make it easier to integrate code, data, and text into workflows.
-
+Proposed solutions include stronger journal policies requiring authors to provide code and data, sometimes linked to permanent repositories [e.g., @barnes2010b; @bechhofer2013b].
+Complementary reforms such as preregistration and registered reports aim to reduce questionable research practices [@nosek2015].
+Technical frameworks also play a role: literate programming [@gentleman2005b; @xie2015], practical guidelines for computational reproducibility [@sandve2013], and newer publishing systems like Quarto [@allaire2020b] make it easier to integrate code, data, and text into workflows.
 
 ## Discussion of the reseach question
 
 Should replicability be the norm?
 
-Most researchers agree that computational reproducibility should be the minimum requirement for published work [@peng2011]. Replication, however, is more expensive and not always feasible, especially in large or sensitive studies. A pragmatic approach is to enforce reproducibility across the board, while prioritizing replication in high-stakes areas such as clinical trials or economic policy [@munafo2017].
+Most researchers agree that computational reproducibility should be the minimum requirement for published work [@peng2011].
+Replication, however, is more expensive and not always feasible, especially in large or sensitive studies.
+A pragmatic approach is to enforce reproducibility across the board, while prioritizing replication in high-stakes areas such as clinical trials or economic policy [@munafo2017].
 
 Can Quarto documents help?
 
-Quarto provides a promising way to make research workflows more transparent. By combining code, narrative, and results in one document, it reduces the risk of errors from copy-pasting [@xie2020; @wickham2016]. When linked with GitHub, it also makes collaboration and peer review easier. Experience from teaching shows that adopting such tools can lower the barrier to working openly and reproducibly, especially for students and early-career researchers [@broman2018].
+Quarto provides a promising way to make research workflows more transparent.
+By combining code, narrative, and results in one document, it reduces the risk of errors from copy-pasting [@xie2020; @wickham2016].
+When linked with GitHub, it also makes collaboration and peer review easier.
+Experience from teaching shows that adopting such tools can lower the barrier to working openly and reproducibly, especially for students and early-career researchers [@broman2018].
 
 What problems remain?
 
-Despite technical progress, cultural and institutional barriers remain. Incentives still reward novelty over careful replication, making it less attractive to reproduce others’ work [@begley2012]. Small samples and flexible analytic choices continue to generate unstable results [@button2013]. Even when journals require data and code, enforcement is inconsistent [@miguel2014].
+Despite technical progress, cultural and institutional barriers remain.
+Incentives still reward novelty over careful replication, making it less attractive to reproduce others’ work [@begley2012].
+Small samples and flexible analytic choices continue to generate unstable results [@button2013].
+Even when journals require data and code, enforcement is inconsistent [@miguel2014].
 
 Several concrete steps could help:
 
-Policy and enforcement – stricter journal checks for code and data availability.
+Policy and enforcement
 
-Preregistration and registered reports – limiting bias by committing to methods before results are known [@nosek2015].
+:   stricter journal checks for code and data availability.
 
-Training and infrastructure – promoting reproducible pipelines and collaborative platforms [@sandve2013].
+Preregistration and registered reports
 
-Environment capture – using tools such as renv in R to freeze dependencies and ensure analyses remain reproducible over time [@starr2015].
+:   limiting bias by committing to methods before results are known [@nosek2015].
+
+Training and infrastructure
+
+:   promoting reproducible pipelines and collaborative platforms [@sandve2013].
+
+Environment capture
+
+:   using tools such as renv in R to freeze dependencies and ensure analyses remain reproducible over time [@starr2015].
 
 ## Conclusion
 
-The reproducibility debate shows both progress and persistent challenges. Psychology, economics, and biomedicine all provide evidence that many results cannot be reproduced [@opensciencecollaboration2015; @dewald1986b; @begley2012]. At the same time, reforms such as preregistration, journal data policies, and computational tools are helping to improve research practices [@sandve2013; @munafo2017].
+The reproducibility debate shows both progress and persistent challenges.
+Psychology, economics, and biomedicine all provide evidence that many results cannot be reproduced [@opensciencecollaboration2015; @dewald1986b; @begley2012].
+At the same time, reforms such as preregistration, journal data policies, and computational tools are helping to improve research practices [@sandve2013; @munafo2017].
 
-The overall conclusion is that reproducibility is not yet good enough. Technical obstacles have been reduced, but incentives and enforcement still lag behind. A realistic path forward is to require computational reproducibility for all published work, while encouraging replication where the stakes are high. With wider use of Quarto, GitHub, and data archives, science can continue moving toward being more robust and reliable.
+The overall conclusion is that reproducibility is not yet good enough.
+Technical obstacles have been reduced, but incentives and enforcement still lag behind.
+A realistic path forward is to require computational reproducibility for all published work, while encouraging replication where the stakes are high.
+With wider use of Quarto, GitHub, and data archives, science can continue moving toward being more robust and reliable.
 
+## Software used
 
-## R version
+### R version
 
 R version 4.5.1 (2025-06-13)
 
-## Attached packages:
+### Attached packages:
 
-attached base packages:
-[1] stats,     graphics,  grDevices,   utils,     datasets,  methods,   base,     
+attached base packages: \[1\] stats, graphics, grDevices, utils, datasets, methods, base,
 
-other attached packages:
-[1] lubridate_1.9.4, forcats_1.0.0,   stringr_1.5.1,   dplyr_1.1.4,     purrr_1.1.0,   
-[6] readr_2.1.5,     tidyr_1.3.1,     tibble_3.3.0,    ggplot2_3.5.2, 
----
+other attached packages: \[1\] lubridate_1.9.4, forcats_1.0.0, stringr_1.5.1, dplyr_1.1.4, purrr_1.1.0,\
+\[6\] readr_2.1.5, tidyr_1.3.1, tibble_3.3.0, ggplot2_3.5.2, ---
 
-
+## References

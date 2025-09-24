@@ -1,0 +1,23 @@
+---
+title: "ag Comments"
+format: html
+editor: visual
+---
+
+## General comments
+
+- A very nice paper!
+- With two small additions to the YAML header it's reproducable in four formats.
+- I suggest a change for: “Earlier attempts such as the JCMB Project (1982) already recognized the need for standardized data archiving.” into “They used data from the 1982 *JMCB Data Storage and Evaluation Project*”. I seems to be diffuclt to find the orignal project report. Most authors cite Dewald et. al (1986).
+- Changed Dewald (1986) to proper citing
+- Nice commit history
+
+## Tips and tricks
+
+-   Added `citeproc: true` to YAML. Forces `typst`to use bibtex instead of its own citation system. Makes it easier to support different output formats.
+-   Added `output-file:` to pdf format. Else `typst` and `xelatex` will overwrite each others pdf output. There are some slight differences in the pdf output from the two pdf-motors.
+- Moved abstract into YAML. Will not accept multiple paragraphs in abstract.
+- Edited bib-entry ioannidis2005b to only have year and not date and year in year field.
+- Changed one of the citations to inline just to show how this can bring some variation to the text. See reference to Simmons et al. (2011). Notice later that tou do this further down in the text so I could have spared me the effort :-(
+- I suggest formatting the concrete steps as a definition list.
+
